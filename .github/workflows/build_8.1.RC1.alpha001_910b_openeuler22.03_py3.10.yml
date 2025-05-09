@@ -26,24 +26,14 @@ jobs:
         dockerfile: Dockerfile
         repos: |
           
-          docker.io/ascendai/cann
+          docker.io/zhihang161013/cann
           
-          quay.io/ascend/cann
-          
-        ascendhub_repo: swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann
         common_registry_tags: |
           
-          docker.io/ascendai/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10
+          docker.io/zhihang161013/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10
           
-          docker.io/ascendai/cann:openeuler-python3.10-cann8.1.RC1.alpha001
+          docker.io/zhihang161013/cann:openeuler-python3.10-cann8.1.RC1.alpha001
           
-          quay.io/ascend/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10
-          
-          quay.io/ascend/cann:openeuler-python3.10-cann8.1.RC1.alpha001
-          
-        ascendhub_registry_tags: |
-          
-          swr.cn-east-3.myhuaweicloud.com/ascendhub-test/cann:8.1.RC1.alpha001-910b-openeuler22.03-py3.10
           
         event_name: ${{ github.event_name }}
     secrets: inherit
