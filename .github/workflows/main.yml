@@ -19,16 +19,8 @@ on:
         description: 'name of the repositories'
         required: true
         type: string
-      ascendhub_repo:
-        description: 'name of the AscendHub repository'
-        required: true
-        type: string
       common_registry_tags:
         description: 'tags of the common registry'
-        required: true
-        type: string
-      ascendhub_registry_tags:
-        description: 'tags of the AscendHub registry'
         required: true
         type: string
       event_name:
@@ -37,25 +29,12 @@ on:
         type: string
 
     secrets:
-      QUAY_USERNAME:
-        description: 'Username of the Quay registry'
-        required: true
-      QUAY_TOKEN:
-        description: 'Token of the Quay registry'
-        required: true
       DOCKER_USERNAME:
         description: 'Username of the DockerHub registry'
         required: true
       DOCKER_TOKEN:
         description: 'Token of the DockerHub registry'
         required: true
-      ASCENDHUB_USERNAME:
-        description: 'Username of the AscendHub registry'
-        required: true
-      ASCENDHUB_TOKEN:
-        description: 'Token of the AscendHub registry'
-        required: true
-      
 jobs:
   build-cann:
     runs-on: ${{ matrix.runner }}
