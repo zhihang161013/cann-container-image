@@ -91,7 +91,7 @@ RUN ARCH=$(case "${TARGETPLATFORM}" in \
     esac) && \
     CANN_NNAL_URL=https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/CANN/CANN%208.0.0/Ascend-cann-nnal_8.0.0_linux-${ARCH}.run && \
     wget ${CANN_NNAL_URL} -O ~/Ascend-cann-nnal.run
-    . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
+    ./usr/local/Ascend/ascend-toolkit/set_env.sh && \
     chmod +x ~/Ascend-cann-nnal.run && \
     ~/Ascend-cann-nnal.run --quiet --install --install-for-all && \
     rm -f ~/Ascend-cann-nnal.run
