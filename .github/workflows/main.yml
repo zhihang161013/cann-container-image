@@ -39,6 +39,7 @@ jobs:
   build-cann:
     runs-on: ${{ matrix.runner }}
     strategy:
+        fail-fast: false
         matrix:
           include:
             - arch: x86_64
